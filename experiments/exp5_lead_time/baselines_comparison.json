@@ -1,0 +1,65 @@
+{
+  "protocol": {
+    "trailing_days": 120,
+    "min_obs": 12,
+    "tau": 95.0,
+    "threshold": "trailing empirical quantile"
+  },
+  "main_adaptive_maha": {
+    "quiet_flags": 16,
+    "quiet_obs": 220,
+    "quiet_rate_pct": 7.3,
+    "in_rule_detections": 5,
+    "lts": {
+      "E2": 21,
+      "E3": 25,
+      "E1": 40,
+      "E4": 24,
+      "E6": 10
+    },
+    "median_lt": 24.0,
+    "mean_lt": 24.0
+  },
+  "b1_univariate_pai_z": {
+    "quiet_flags": 19,
+    "quiet_obs": 220,
+    "quiet_rate_pct": 8.6,
+    "in_rule_detections": 5,
+    "lts": {
+      "E2": 21,
+      "E5": 40,
+      "E3": 25,
+      "E1": 5,
+      "E6": 39
+    },
+    "median_lt": 25.0,
+    "mean_lt": 26.0
+  },
+  "b2_isoforest": {
+    "quiet_flags": 17,
+    "quiet_obs": 220,
+    "quiet_rate_pct": 7.7,
+    "in_rule_detections": 2,
+    "lts": {
+      "E1": 5,
+      "E4": 24
+    },
+    "median_lt": 14.5,
+    "mean_lt": 14.5
+  },
+  "b3_raw_maha": {
+    "quiet_flags": 16,
+    "quiet_obs": 220,
+    "quiet_rate_pct": 7.3,
+    "in_rule_detections": 5,
+    "lts": {
+      "E2": 21,
+      "E3": 25,
+      "E1": 55,
+      "E4": 24,
+      "E6": 10
+    },
+    "median_lt": 24.0,
+    "mean_lt": 27.0
+  }
+}

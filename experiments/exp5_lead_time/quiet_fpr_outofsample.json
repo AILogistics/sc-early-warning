@@ -1,0 +1,108 @@
+{
+  "per_port": {
+    "shanghai": {
+      "n_quiet_obs": 70,
+      "window": [
+        "2022-07-04",
+        "2023-06-20"
+      ],
+      "taus": {
+        "95.0": {
+          "threshold": 12.591587243743977,
+          "quiet_flags": 20,
+          "quiet_rate": 0.2857142857142857,
+          "nominal": 0.05,
+          "runs": 10,
+          "max_run": 5
+        },
+        "97.5": {
+          "threshold": 14.44937533544792,
+          "quiet_flags": 18,
+          "quiet_rate": 0.2571428571428571,
+          "nominal": 0.025,
+          "runs": 9,
+          "max_run": 5
+        },
+        "99.0": {
+          "threshold": 16.811893829770927,
+          "quiet_flags": 17,
+          "quiet_rate": 0.24285714285714285,
+          "nominal": 0.01,
+          "runs": 10,
+          "max_run": 3
+        }
+      }
+    },
+    "los_angeles": {
+      "n_quiet_obs": 47,
+      "window": [
+        "2022-01-01",
+        "2022-06-23"
+      ],
+      "taus": {
+        "95.0": {
+          "threshold": 12.591587243743977,
+          "quiet_flags": 12,
+          "quiet_rate": 0.2553191489361702,
+          "nominal": 0.05,
+          "runs": 11,
+          "max_run": 2
+        },
+        "97.5": {
+          "threshold": 14.44937533544792,
+          "quiet_flags": 12,
+          "quiet_rate": 0.2553191489361702,
+          "nominal": 0.025,
+          "runs": 11,
+          "max_run": 2
+        },
+        "99.0": {
+          "threshold": 16.811893829770927,
+          "quiet_flags": 12,
+          "quiet_rate": 0.2553191489361702,
+          "nominal": 0.01,
+          "runs": 11,
+          "max_run": 2
+        }
+      }
+    },
+    "rotterdam": {
+      "n_quiet_obs": 103,
+      "window": [
+        "2021-06-02",
+        "2022-10-26"
+      ],
+      "taus": {
+        "95.0": {
+          "threshold": 12.591587243743977,
+          "quiet_flags": 11,
+          "quiet_rate": 0.10679611650485436,
+          "nominal": 0.05,
+          "runs": 8,
+          "max_run": 2
+        },
+        "97.5": {
+          "threshold": 14.44937533544792,
+          "quiet_flags": 9,
+          "quiet_rate": 0.08737864077669903,
+          "nominal": 0.025,
+          "runs": 6,
+          "max_run": 2
+        },
+        "99.0": {
+          "threshold": 16.811893829770927,
+          "quiet_flags": 6,
+          "quiet_rate": 0.05825242718446602,
+          "nominal": 0.01,
+          "runs": 4,
+          "max_run": 2
+        }
+      }
+    }
+  },
+  "pooled_rate_pct": {
+    "95.0": 19.5,
+    "97.5": 17.7,
+    "99.0": 15.9
+  }
+}

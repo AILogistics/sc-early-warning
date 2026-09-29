@@ -1,0 +1,52 @@
+# Tier 1: 真正的 disruption,Lead Time 主样本(K>=6, 含 >=4 Tier 1)
+tier1_disruptions:
+  - id: E1_suez_2021
+    port: rotterdam
+    event_date: "2021-03-23"
+    public_recognition_date: "2021-03-24"   # 全球新闻爆发
+    description: "Suez Canal Ever Given blockage"
+    source: "Lloyd's List, Reuters"
+
+  - id: E2_shanghai_lockdown_2022
+    port: shanghai
+    event_date: "2022-03-28"
+    public_recognition_date: "2022-04-01"
+    description: "Shanghai COVID lockdown port disruption"
+    source: "Reuters, WSJ"
+
+  - id: E3_uswc_crisis_2021
+    port: los_angeles
+    event_date: "2021-10-01"   # 拥堵峰值期
+    public_recognition_date: "2021-10-15"
+    description: "US West Coast port congestion crisis peak"
+    source: "Lloyd's List, WSJ"
+
+  - id: E4_ukraine_energy_2022
+    port: rotterdam
+    event_date: "2022-03-01"   # 俄乌战争能源流变化
+    public_recognition_date: "2022-03-10"
+    description: "Russia-Ukraine war energy flow disruption"
+    source: "Reuters"
+
+  - id: E5_redsea_2024
+    port: shanghai
+    event_date: "2024-01-12"   # 红海危机绕航影响
+    public_recognition_date: "2024-01-15"
+    description: "Red Sea crisis routing disruption"
+    source: "Lloyd's List"
+
+  - id: E6_rhine_lowwater_2023
+    port: rotterdam
+    event_date: "2023-08-15"
+    public_recognition_date: "2023-08-20"
+    description: "Rhine River low water level disruption"
+    source: "Reuters"
+
+# Tier 2: 周期/预期事件,仅做季节性分析,不进 Lead Time 主样本
+tier2_seasonal:
+  - id: S1_spring_festival_2023
+    port: shanghai
+    description: "Spring Festival trade cycle"
+  - id: S2_inventory_adjust_2024
+    port: los_angeles
+    description: "Inventory cycle adjustment"

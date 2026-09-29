@@ -1,0 +1,32 @@
+{
+  "shanghai->los_angeles": {
+    "pair": "shanghai->los_angeles",
+    "status": "insufficient_overlap",
+    "n_obs": 0
+  },
+  "shanghai->rotterdam": {
+    "pair": "shanghai->rotterdam",
+    "status": "insufficient_overlap",
+    "n_obs": 18
+  },
+  "los_angeles->shanghai": {
+    "pair": "los_angeles->shanghai",
+    "status": "insufficient_overlap",
+    "n_obs": 0
+  },
+  "los_angeles->rotterdam": {
+    "pair": "los_angeles->rotterdam",
+    "status": "insufficient_overlap",
+    "n_obs": 1
+  },
+  "rotterdam->shanghai": {
+    "pair": "rotterdam->shanghai",
+    "status": "insufficient_overlap",
+    "n_obs": 18
+  },
+  "rotterdam->los_angeles": {
+    "pair": "rotterdam->los_angeles",
+    "status": "insufficient_overlap",
+    "n_obs": 1
+  }
+}

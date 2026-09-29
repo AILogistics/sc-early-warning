@@ -1,0 +1,33 @@
+ports:
+  shanghai:
+    name: "Shanghai + Ningbo-Zhoushan"
+    country: "China"
+    role: "World's largest container port complex"
+    bbox: [120.9, 29.7, 122.5, 31.5]   # [west, south, east, north]
+    center: [121.7, 30.6]
+    buffer_km: 25
+    sentinel1_coverage: "good"
+    sentinel2_cloud_issue: "high"  # 亚热带多云,SAR 关键
+  los_angeles:
+    name: "Los Angeles / Long Beach"
+    country: "USA"
+    role: "US West Coast hub"
+    bbox: [-118.30, 33.40, -117.90, 33.80]
+    center: [-118.18, 33.60]
+    buffer_km: 20
+    sentinel1_coverage: "good"
+    sentinel2_cloud_issue: "low"
+  rotterdam:
+    name: "Rotterdam"
+    country: "Netherlands"
+    role: "Europe's largest port"
+    bbox: [3.80, 51.85, 4.60, 52.10]
+    center: [4.20, 51.95]
+    buffer_km: 20
+    sentinel1_coverage: "good"
+    sentinel2_cloud_issue: "medium"
+
+# 时间范围:覆盖所有事件前后
+date_range:
+  start: "2021-01-01"
+  end: "2024-12-31"

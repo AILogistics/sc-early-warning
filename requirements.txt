@@ -1,0 +1,14 @@
+numpy>=1.24
+pandas>=2.0
+scipy>=1.10
+scikit-learn>=1.3
+statsmodels>=0.14
+matplotlib>=3.7
+pyyaml>=6.0
+requests>=2.31
+rasterio>=1.3
+earthengine-api>=0.1.400
+einops>=0.6
+timm>=0.9
+# Detection additionally requires an Ultralytics YOLOv8 installation patched with the
+# custom modules in third_party/ultralytics_modules/ (see README).

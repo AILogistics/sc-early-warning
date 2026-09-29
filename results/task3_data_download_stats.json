@@ -1,0 +1,98 @@
+[
+  {
+    "event_id": "E1_suez_2021",
+    "port": "rotterdam",
+    "window": [
+      "2020-12-23",
+      "2021-05-22"
+    ],
+    "downloaded": {
+      "sentinel1": 62,
+      "sentinel2": 12
+    },
+    "failed": {
+      "sentinel1": 0,
+      "sentinel2": 0
+    }
+  },
+  {
+    "event_id": "E2_shanghai_lockdown_2022",
+    "port": "shanghai",
+    "window": [
+      "2021-12-28",
+      "2022-05-27"
+    ],
+    "downloaded": {
+      "sentinel1": 12,
+      "sentinel2": 62
+    },
+    "failed": {
+      "sentinel1": 0,
+      "sentinel2": 0
+    }
+  },
+  {
+    "event_id": "E3_uswc_crisis_2021",
+    "port": "los_angeles",
+    "window": [
+      "2021-07-03",
+      "2021-11-30"
+    ],
+    "downloaded": {
+      "sentinel1": 25,
+      "sentinel2": 17
+    },
+    "failed": {
+      "sentinel1": 0,
+      "sentinel2": 0
+    }
+  },
+  {
+    "event_id": "E4_ukraine_energy_2022",
+    "port": "rotterdam",
+    "window": [
+      "2021-12-01",
+      "2022-04-30"
+    ],
+    "downloaded": {
+      "sentinel1": 30,
+      "sentinel2": 17
+    },
+    "failed": {
+      "sentinel1": 0,
+      "sentinel2": 0
+    }
+  },
+  {
+    "event_id": "E5_redsea_2024",
+    "port": "shanghai",
+    "window": [
+      "2023-10-14",
+      "2024-03-12"
+    ],
+    "downloaded": {
+      "sentinel1": 13,
+      "sentinel2": 76
+    },
+    "failed": {
+      "sentinel1": 0,
+      "sentinel2": 0
+    }
+  },
+  {
+    "event_id": "E6_rhine_lowwater_2023",
+    "port": "rotterdam",
+    "window": [
+      "2023-05-17",
+      "2023-10-14"
+    ],
+    "downloaded": {
+      "sentinel1": 25,
+      "sentinel2": 19
+    },
+    "failed": {
+      "sentinel1": 0,
+      "sentinel2": 0
+    }
+  }
+]

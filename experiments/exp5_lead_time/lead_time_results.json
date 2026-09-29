@@ -1,0 +1,247 @@
+{
+  "per_event": [
+    {
+      "event_id": "E1_suez_2021",
+      "event_date": "2021-03-23",
+      "public_recognition_date": "2021-03-24",
+      "t_satellite": "2021-03-19",
+      "lt_satellite": 5,
+      "threshold_percentile": 95.0,
+      "status": "ok"
+    },
+    {
+      "event_id": "E2_shanghai_lockdown_2022",
+      "event_date": "2022-03-28",
+      "public_recognition_date": "2022-04-01",
+      "t_satellite": "2022-03-14",
+      "lt_satellite": 18,
+      "threshold_percentile": 95.0,
+      "status": "ok"
+    },
+    {
+      "event_id": "E3_uswc_crisis_2021",
+      "event_date": "2021-10-01",
+      "public_recognition_date": "2021-10-15",
+      "t_satellite": "2021-08-16",
+      "lt_satellite": 60,
+      "threshold_percentile": 95.0,
+      "status": "ok"
+    },
+    {
+      "event_id": "E4_ukraine_energy_2022",
+      "event_date": "2022-03-01",
+      "public_recognition_date": "2022-03-10",
+      "t_satellite": "2021-10-15",
+      "lt_satellite": 146,
+      "threshold_percentile": 95.0,
+      "status": "ok"
+    },
+    {
+      "event_id": "E5_redsea_2024",
+      "event_date": "2024-01-12",
+      "public_recognition_date": "2024-01-15",
+      "t_satellite": "2023-06-09",
+      "lt_satellite": 220,
+      "threshold_percentile": 95.0,
+      "status": "ok"
+    },
+    {
+      "event_id": "E6_rhine_lowwater_2023",
+      "event_date": "2023-08-15",
+      "public_recognition_date": "2023-08-20",
+      "t_satellite": "2023-06-09",
+      "lt_satellite": 72,
+      "threshold_percentile": 95.0,
+      "status": "ok"
+    }
+  ],
+  "sensitivity": {
+    "E1_suez_2021": {
+      "95": {
+        "event_id": "E1_suez_2021",
+        "event_date": "2021-03-23",
+        "public_recognition_date": "2021-03-24",
+        "t_satellite": "2021-03-19",
+        "lt_satellite": 5,
+        "threshold_percentile": 95,
+        "status": "ok"
+      },
+      "97.5": {
+        "event_id": "E1_suez_2021",
+        "event_date": "2021-03-23",
+        "public_recognition_date": "2021-03-24",
+        "t_satellite": "2021-03-19",
+        "lt_satellite": 5,
+        "threshold_percentile": 97.5,
+        "status": "ok"
+      },
+      "99": {
+        "event_id": "E1_suez_2021",
+        "event_date": "2021-03-23",
+        "public_recognition_date": "2021-03-24",
+        "t_satellite": "2021-03-19",
+        "lt_satellite": 5,
+        "threshold_percentile": 99,
+        "status": "ok"
+      }
+    },
+    "E2_shanghai_lockdown_2022": {
+      "95": {
+        "event_id": "E2_shanghai_lockdown_2022",
+        "event_date": "2022-03-28",
+        "public_recognition_date": "2022-04-01",
+        "t_satellite": "2022-03-14",
+        "lt_satellite": 18,
+        "threshold_percentile": 95,
+        "status": "ok"
+      },
+      "97.5": {
+        "event_id": "E2_shanghai_lockdown_2022",
+        "event_date": "2022-03-28",
+        "public_recognition_date": "2022-04-01",
+        "t_satellite": "2022-03-14",
+        "lt_satellite": 18,
+        "threshold_percentile": 97.5,
+        "status": "ok"
+      },
+      "99": {
+        "event_id": "E2_shanghai_lockdown_2022",
+        "event_date": "2022-03-28",
+        "public_recognition_date": "2022-04-01",
+        "t_satellite": "2022-01-18",
+        "lt_satellite": 73,
+        "threshold_percentile": 99,
+        "status": "ok"
+      }
+    },
+    "E3_uswc_crisis_2021": {
+      "95": {
+        "event_id": "E3_uswc_crisis_2021",
+        "event_date": "2021-10-01",
+        "public_recognition_date": "2021-10-15",
+        "t_satellite": "2021-08-16",
+        "lt_satellite": 60,
+        "threshold_percentile": 95,
+        "status": "ok"
+      },
+      "97.5": {
+        "event_id": "E3_uswc_crisis_2021",
+        "event_date": "2021-10-01",
+        "public_recognition_date": "2021-10-15",
+        "t_satellite": "2021-08-16",
+        "lt_satellite": 60,
+        "threshold_percentile": 97.5,
+        "status": "ok"
+      },
+      "99": {
+        "event_id": "E3_uswc_crisis_2021",
+        "event_date": "2021-10-01",
+        "public_recognition_date": "2021-10-15",
+        "t_satellite": "2021-08-16",
+        "lt_satellite": 60,
+        "threshold_percentile": 99,
+        "status": "ok"
+      }
+    },
+    "E4_ukraine_energy_2022": {
+      "95": {
+        "event_id": "E4_ukraine_energy_2022",
+        "event_date": "2022-03-01",
+        "public_recognition_date": "2022-03-10",
+        "t_satellite": "2021-10-15",
+        "lt_satellite": 146,
+        "threshold_percentile": 95,
+        "status": "ok"
+      },
+      "97.5": {
+        "event_id": "E4_ukraine_energy_2022",
+        "event_date": "2022-03-01",
+        "public_recognition_date": "2022-03-10",
+        "t_satellite": "2021-10-15",
+        "lt_satellite": 146,
+        "threshold_percentile": 97.5,
+        "status": "ok"
+      },
+      "99": {
+        "event_id": "E4_ukraine_energy_2022",
+        "event_date": "2022-03-01",
+        "public_recognition_date": "2022-03-10",
+        "t_satellite": "2021-10-15",
+        "lt_satellite": 146,
+        "threshold_percentile": 99,
+        "status": "ok"
+      }
+    },
+    "E5_redsea_2024": {
+      "95": {
+        "event_id": "E5_redsea_2024",
+        "event_date": "2024-01-12",
+        "public_recognition_date": "2024-01-15",
+        "t_satellite": "2023-06-09",
+        "lt_satellite": 220,
+        "threshold_percentile": 95,
+        "status": "ok"
+      },
+      "97.5": {
+        "event_id": "E5_redsea_2024",
+        "event_date": "2024-01-12",
+        "public_recognition_date": "2024-01-15",
+        "t_satellite": "2023-06-09",
+        "lt_satellite": 220,
+        "threshold_percentile": 97.5,
+        "status": "ok"
+      },
+      "99": {
+        "event_id": "E5_redsea_2024",
+        "event_date": "2024-01-12",
+        "public_recognition_date": "2024-01-15",
+        "t_satellite": "2023-06-09",
+        "lt_satellite": 220,
+        "threshold_percentile": 99,
+        "status": "ok"
+      }
+    },
+    "E6_rhine_lowwater_2023": {
+      "95": {
+        "event_id": "E6_rhine_lowwater_2023",
+        "event_date": "2023-08-15",
+        "public_recognition_date": "2023-08-20",
+        "t_satellite": "2023-06-09",
+        "lt_satellite": 72,
+        "threshold_percentile": 95,
+        "status": "ok"
+      },
+      "97.5": {
+        "event_id": "E6_rhine_lowwater_2023",
+        "event_date": "2023-08-15",
+        "public_recognition_date": "2023-08-20",
+        "t_satellite": "2023-06-09",
+        "lt_satellite": 72,
+        "threshold_percentile": 97.5,
+        "status": "ok"
+      },
+      "99": {
+        "event_id": "E6_rhine_lowwater_2023",
+        "event_date": "2023-08-15",
+        "public_recognition_date": "2023-08-20",
+        "t_satellite": "2023-05-20",
+        "lt_satellite": 92,
+        "threshold_percentile": 99,
+        "status": "ok"
+      }
+    }
+  },
+  "aggregate": {
+    "mean": 86.83333333333333,
+    "median": 66.0,
+    "std": 81.98638098286,
+    "min": 5.0,
+    "max": 220.0,
+    "lower": 33.80833333333336,
+    "upper": 152.7083333333333,
+    "n": 6,
+    "n_boot": 1000
+  },
+  "n_events_total": 6,
+  "n_events_with_detection": 6
+}

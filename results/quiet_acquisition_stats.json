@@ -1,0 +1,82 @@
+[
+  {
+    "id": "Q1_rotterdam_summer2021",
+    "port": "rotterdam",
+    "window": [
+      "2021-06-01",
+      "2021-10-31"
+    ],
+    "downloaded": {
+      "sentinel1": 63,
+      "sentinel2": 14
+    },
+    "failed": {
+      "sentinel1": 0,
+      "sentinel2": 0
+    }
+  },
+  {
+    "id": "Q2_rotterdam_summer2022",
+    "port": "rotterdam",
+    "window": [
+      "2022-06-01",
+      "2022-10-31"
+    ],
+    "downloaded": {
+      "sentinel1": 24,
+      "sentinel2": 15
+    },
+    "failed": {
+      "sentinel1": 0,
+      "sentinel2": 0
+    }
+  },
+  {
+    "id": "Q3_shanghai_h2_2022",
+    "port": "shanghai",
+    "window": [
+      "2022-07-01",
+      "2022-12-31"
+    ],
+    "downloaded": {
+      "sentinel1": 15,
+      "sentinel2": 66
+    },
+    "failed": {
+      "sentinel1": 0,
+      "sentinel2": 0
+    }
+  },
+  {
+    "id": "Q4_shanghai_h1_2023",
+    "port": "shanghai",
+    "window": [
+      "2023-02-01",
+      "2023-06-30"
+    ],
+    "downloaded": {
+      "sentinel1": 11,
+      "sentinel2": 40
+    },
+    "failed": {
+      "sentinel1": 1,
+      "sentinel2": 0
+    }
+  },
+  {
+    "id": "Q5_la_h1_2022",
+    "port": "los_angeles",
+    "window": [
+      "2022-01-01",
+      "2022-06-30"
+    ],
+    "downloaded": {
+      "sentinel1": 29,
+      "sentinel2": 18
+    },
+    "failed": {
+      "sentinel1": 0,
+      "sentinel2": 0
+    }
+  }
+]

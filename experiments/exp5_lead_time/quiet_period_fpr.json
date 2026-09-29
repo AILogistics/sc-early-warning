@@ -1,0 +1,293 @@
+{
+  "shanghai": {
+    "n_obs": 141,
+    "n_event_obs": 71,
+    "n_quiet_obs": 70,
+    "date_min": "2021-12-29",
+    "date_max": "2024-03-10",
+    "events_at_port": [
+      "E2_shanghai_lockdown_2022",
+      "E5_redsea_2024"
+    ],
+    "taus": {
+      "95.0": {
+        "threshold": 12.591587243743977,
+        "flag_rate_full_series": 0.09219858156028368,
+        "quiet_flag_count": 11,
+        "quiet_obs": 70,
+        "quiet_flag_rate": 0.15714285714285714,
+        "quiet_runs": 6,
+        "quiet_max_run_len": 3,
+        "nominal_rate": 0.05
+      },
+      "97.5": {
+        "threshold": 14.44937533544792,
+        "flag_rate_full_series": 0.0851063829787234,
+        "quiet_flag_count": 10,
+        "quiet_obs": 70,
+        "quiet_flag_rate": 0.14285714285714285,
+        "quiet_runs": 5,
+        "quiet_max_run_len": 3,
+        "nominal_rate": 0.025
+      },
+      "99.0": {
+        "threshold": 16.811893829770927,
+        "flag_rate_full_series": 0.06382978723404255,
+        "quiet_flag_count": 8,
+        "quiet_obs": 70,
+        "quiet_flag_rate": 0.11428571428571428,
+        "quiet_runs": 4,
+        "quiet_max_run_len": 3,
+        "nominal_rate": 0.01
+      }
+    },
+    "per_event": {
+      "E2_shanghai_lockdown_2022": {
+        "95.0": {
+          "pre_obs": 21,
+          "pre_flags": 2,
+          "pre_runs": 2,
+          "pre_max_run": 1,
+          "post_flags": 0,
+          "p_at_least_one_flag_null": 0.868838010107214
+        },
+        "97.5": {
+          "pre_obs": 21,
+          "pre_flags": 2,
+          "pre_runs": 2,
+          "pre_max_run": 1,
+          "post_flags": 0,
+          "p_at_least_one_flag_null": 0.8455519069405022
+        },
+        "99.0": {
+          "pre_obs": 21,
+          "pre_flags": 1,
+          "pre_runs": 1,
+          "pre_max_run": 1,
+          "post_flags": 0,
+          "p_at_least_one_flag_null": 0.7497055673818411
+        }
+      },
+      "E5_redsea_2024": {
+        "95.0": {
+          "pre_obs": 24,
+          "pre_flags": 0,
+          "pre_runs": 0,
+          "pre_max_run": 0,
+          "post_flags": 0,
+          "p_at_least_one_flag_null": 0.9018747970896208
+        },
+        "97.5": {
+          "pre_obs": 24,
+          "pre_flags": 0,
+          "pre_runs": 0,
+          "pre_max_run": 0,
+          "post_flags": 0,
+          "p_at_least_one_flag_null": 0.881724622339159
+        },
+        "99.0": {
+          "pre_obs": 24,
+          "pre_flags": 0,
+          "pre_runs": 0,
+          "pre_max_run": 0,
+          "post_flags": 0,
+          "p_at_least_one_flag_null": 0.7946400995141226
+        }
+      }
+    }
+  },
+  "los_angeles": {
+    "n_obs": 89,
+    "n_event_obs": 42,
+    "n_quiet_obs": 47,
+    "date_min": "2021-07-05",
+    "date_max": "2022-06-23",
+    "events_at_port": [
+      "E3_uswc_crisis_2021"
+    ],
+    "taus": {
+      "95.0": {
+        "threshold": 12.591587243743977,
+        "flag_rate_full_series": 0.0898876404494382,
+        "quiet_flag_count": 5,
+        "quiet_obs": 47,
+        "quiet_flag_rate": 0.10638297872340426,
+        "quiet_runs": 5,
+        "quiet_max_run_len": 1,
+        "nominal_rate": 0.05
+      },
+      "97.5": {
+        "threshold": 14.44937533544792,
+        "flag_rate_full_series": 0.0898876404494382,
+        "quiet_flag_count": 5,
+        "quiet_obs": 47,
+        "quiet_flag_rate": 0.10638297872340426,
+        "quiet_runs": 5,
+        "quiet_max_run_len": 1,
+        "nominal_rate": 0.025
+      },
+      "99.0": {
+        "threshold": 16.811893829770927,
+        "flag_rate_full_series": 0.07865168539325842,
+        "quiet_flag_count": 4,
+        "quiet_obs": 47,
+        "quiet_flag_rate": 0.0851063829787234,
+        "quiet_runs": 4,
+        "quiet_max_run_len": 1,
+        "nominal_rate": 0.01
+      }
+    },
+    "per_event": {
+      "E3_uswc_crisis_2021": {
+        "95.0": {
+          "pre_obs": 25,
+          "pre_flags": 2,
+          "pre_runs": 2,
+          "pre_max_run": 1,
+          "post_flags": 1,
+          "p_at_least_one_flag_null": 0.9050761584223437
+        },
+        "97.5": {
+          "pre_obs": 25,
+          "pre_flags": 2,
+          "pre_runs": 2,
+          "pre_max_run": 1,
+          "post_flags": 1,
+          "p_at_least_one_flag_null": 0.9050761584223437
+        },
+        "99.0": {
+          "pre_obs": 25,
+          "pre_flags": 2,
+          "pre_runs": 2,
+          "pre_max_run": 1,
+          "post_flags": 1,
+          "p_at_least_one_flag_null": 0.8709980891187418
+        }
+      }
+    }
+  },
+  "rotterdam": {
+    "n_obs": 254,
+    "n_event_obs": 151,
+    "n_quiet_obs": 103,
+    "date_min": "2020-12-23",
+    "date_max": "2023-10-10",
+    "events_at_port": [
+      "E1_suez_2021",
+      "E4_ukraine_energy_2022",
+      "E6_rhine_lowwater_2023"
+    ],
+    "taus": {
+      "95.0": {
+        "threshold": 12.591587243743977,
+        "flag_rate_full_series": 0.07480314960629922,
+        "quiet_flag_count": 8,
+        "quiet_obs": 103,
+        "quiet_flag_rate": 0.07766990291262135,
+        "quiet_runs": 6,
+        "quiet_max_run_len": 2,
+        "nominal_rate": 0.05
+      },
+      "97.5": {
+        "threshold": 14.44937533544792,
+        "flag_rate_full_series": 0.06299212598425197,
+        "quiet_flag_count": 7,
+        "quiet_obs": 103,
+        "quiet_flag_rate": 0.06796116504854369,
+        "quiet_runs": 5,
+        "quiet_max_run_len": 2,
+        "nominal_rate": 0.025
+      },
+      "99.0": {
+        "threshold": 16.811893829770927,
+        "flag_rate_full_series": 0.03937007874015748,
+        "quiet_flag_count": 5,
+        "quiet_obs": 103,
+        "quiet_flag_rate": 0.04854368932038835,
+        "quiet_runs": 3,
+        "quiet_max_run_len": 2,
+        "nominal_rate": 0.01
+      }
+    },
+    "per_event": {
+      "E1_suez_2021": {
+        "95.0": {
+          "pre_obs": 34,
+          "pre_flags": 4,
+          "pre_runs": 3,
+          "pre_max_run": 2,
+          "post_flags": 1,
+          "p_at_least_one_flag_null": 0.9288850429370118
+        },
+        "97.5": {
+          "pre_obs": 34,
+          "pre_flags": 3,
+          "pre_runs": 2,
+          "pre_max_run": 2,
+          "post_flags": 1,
+          "p_at_least_one_flag_null": 0.8905362871122539
+        },
+        "99.0": {
+          "pre_obs": 34,
+          "pre_flags": 2,
+          "pre_runs": 1,
+          "pre_max_run": 2,
+          "post_flags": 1,
+          "p_at_least_one_flag_null": 0.7447840982860456
+        }
+      },
+      "E4_ukraine_energy_2022": {
+        "95.0": {
+          "pre_obs": 24,
+          "pre_flags": 0,
+          "pre_runs": 0,
+          "pre_max_run": 0,
+          "post_flags": 0,
+          "p_at_least_one_flag_null": 0.8452539772664797
+        },
+        "97.5": {
+          "pre_obs": 24,
+          "pre_flags": 0,
+          "pre_runs": 0,
+          "pre_max_run": 0,
+          "post_flags": 0,
+          "p_at_least_one_flag_null": 0.7901844023237632
+        },
+        "99.0": {
+          "pre_obs": 24,
+          "pre_flags": 0,
+          "pre_runs": 0,
+          "pre_max_run": 0,
+          "post_flags": 0,
+          "p_at_least_one_flag_null": 0.6186299065342865
+        }
+      },
+      "E6_rhine_lowwater_2023": {
+        "95.0": {
+          "pre_obs": 27,
+          "pre_flags": 5,
+          "pre_runs": 2,
+          "pre_max_run": 3,
+          "post_flags": 1,
+          "p_at_least_one_flag_null": 0.8774475684123291
+        },
+        "97.5": {
+          "pre_obs": 27,
+          "pre_flags": 5,
+          "pre_runs": 2,
+          "pre_max_run": 3,
+          "post_flags": 0,
+          "p_at_least_one_flag_null": 0.8273893882323327
+        },
+        "99.0": {
+          "pre_obs": 27,
+          "pre_flags": 2,
+          "pre_runs": 1,
+          "pre_max_run": 2,
+          "post_flags": 0,
+          "p_at_least_one_flag_null": 0.6619235165105701
+        }
+      }
+    }
+  }
+}

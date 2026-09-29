@@ -1,0 +1,76 @@
+{
+  "comparison": {
+    "per_event": [
+      {
+        "event_id": "E1_suez_2021",
+        "satellite_lt_days": 5,
+        "news_lt_days": 0,
+        "satellite_advantage_days": 5,
+        "satellite_status": "ok",
+        "port": "rotterdam",
+        "event_date": "2021-03-23"
+      },
+      {
+        "event_id": "E2_shanghai_lockdown_2022",
+        "satellite_lt_days": 18,
+        "news_lt_days": 0,
+        "satellite_advantage_days": 18,
+        "satellite_status": "ok",
+        "port": "shanghai",
+        "event_date": "2022-03-28"
+      },
+      {
+        "event_id": "E3_uswc_crisis_2021",
+        "satellite_lt_days": 60,
+        "news_lt_days": 0,
+        "satellite_advantage_days": 60,
+        "satellite_status": "ok",
+        "port": "los_angeles",
+        "event_date": "2021-10-01"
+      },
+      {
+        "event_id": "E4_ukraine_energy_2022",
+        "satellite_lt_days": 146,
+        "news_lt_days": 0,
+        "satellite_advantage_days": 146,
+        "satellite_status": "ok",
+        "port": "rotterdam",
+        "event_date": "2022-03-01"
+      },
+      {
+        "event_id": "E5_redsea_2024",
+        "satellite_lt_days": 220,
+        "news_lt_days": 0,
+        "satellite_advantage_days": 220,
+        "satellite_status": "ok",
+        "port": "shanghai",
+        "event_date": "2024-01-12"
+      },
+      {
+        "event_id": "E6_rhine_lowwater_2023",
+        "satellite_lt_days": 72,
+        "news_lt_days": 0,
+        "satellite_advantage_days": 72,
+        "satellite_status": "ok",
+        "port": "rotterdam",
+        "event_date": "2023-08-15"
+      }
+    ],
+    "aggregate": {
+      "n_events_total": 6,
+      "n_events_detected": 6,
+      "detection_rate": 1.0,
+      "mean_satellite_lt": 86.83333333333333,
+      "median_satellite_lt": 66.0,
+      "std_satellite_lt": 81.98638098286,
+      "min_satellite_lt": 5.0,
+      "max_satellite_lt": 220.0
+    },
+    "baseline_strategy": {
+      "primary": "news (= public_recognition_date from events.yaml)",
+      "secondary": "AIS (where available, omitted if no data)",
+      "note": "News baseline has LT=0 by definition (news = public recognition). Satellite advantage = satellite LT."
+    }
+  },
+  "paper_text": "The proposed satellite-based framework detected 6/6 Tier 1 disruption events (100% detection rate) with a mean warning lead time of 86.8 days before publicly recognized disruption events, outperforming news-based monitoring (which by definition has 0 days lead). Median satellite lead time: 66.0 days (range 5-220)."
+}

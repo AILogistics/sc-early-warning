@@ -1,0 +1,247 @@
+{
+  "config": {
+    "trailing_days": 120,
+    "min_obs": 12,
+    "features": [
+      "N_total",
+      "N_anchor",
+      "N_berth",
+      "delta_arrive",
+      "PCI"
+    ],
+    "taus": [
+      95.0,
+      97.5,
+      99.0
+    ]
+  },
+  "shanghai": {
+    "n_obs": 141,
+    "n_scored": 117,
+    "n_quiet_scored": 70,
+    "taus": {
+      "95.0": {
+        "quiet_flags": 8,
+        "quiet_obs": 70,
+        "quiet_rate": 0.11428571428571428
+      },
+      "97.5": {
+        "quiet_flags": 6,
+        "quiet_obs": 70,
+        "quiet_rate": 0.08571428571428572
+      },
+      "99.0": {
+        "quiet_flags": 6,
+        "quiet_obs": 70,
+        "quiet_rate": 0.08571428571428572
+      }
+    }
+  },
+  "los_angeles": {
+    "n_obs": 89,
+    "n_scored": 77,
+    "n_quiet_scored": 47,
+    "taus": {
+      "95.0": {
+        "quiet_flags": 2,
+        "quiet_obs": 47,
+        "quiet_rate": 0.0425531914893617
+      },
+      "97.5": {
+        "quiet_flags": 2,
+        "quiet_obs": 47,
+        "quiet_rate": 0.0425531914893617
+      },
+      "99.0": {
+        "quiet_flags": 2,
+        "quiet_obs": 47,
+        "quiet_rate": 0.0425531914893617
+      }
+    }
+  },
+  "rotterdam": {
+    "n_obs": 254,
+    "n_scored": 230,
+    "n_quiet_scored": 103,
+    "taus": {
+      "95.0": {
+        "quiet_flags": 6,
+        "quiet_obs": 103,
+        "quiet_rate": 0.05825242718446602
+      },
+      "97.5": {
+        "quiet_flags": 3,
+        "quiet_obs": 103,
+        "quiet_rate": 0.02912621359223301
+      },
+      "99.0": {
+        "quiet_flags": 2,
+        "quiet_obs": 103,
+        "quiet_rate": 0.019417475728155338
+      }
+    }
+  },
+  "pooled_quiet": {
+    "95.0": {
+      "flags": 16,
+      "obs": 220,
+      "rate": 0.07272727272727272
+    },
+    "97.5": {
+      "flags": 11,
+      "obs": 220,
+      "rate": 0.05
+    },
+    "99.0": {
+      "flags": 10,
+      "obs": 220,
+      "rate": 0.045454545454545456
+    }
+  },
+  "per_event": [
+    {
+      "event": "E2_shanghai_lockdown_2022",
+      "tau": 95.0,
+      "port": "shanghai",
+      "t_satellite": "2022-03-11",
+      "lt": 21,
+      "in_window_rule": true
+    },
+    {
+      "event": "E5_redsea_2024",
+      "tau": 95.0,
+      "port": "shanghai",
+      "t_satellite": "2023-06-09",
+      "lt": 220,
+      "in_window_rule": false
+    },
+    {
+      "event": "E2_shanghai_lockdown_2022",
+      "tau": 97.5,
+      "port": "shanghai",
+      "t_satellite": "2022-03-11",
+      "lt": 21,
+      "in_window_rule": true
+    },
+    {
+      "event": "E5_redsea_2024",
+      "tau": 97.5,
+      "port": "shanghai",
+      "t_satellite": "2023-06-09",
+      "lt": 220,
+      "in_window_rule": false
+    },
+    {
+      "event": "E2_shanghai_lockdown_2022",
+      "tau": 99.0,
+      "port": "shanghai",
+      "t_satellite": "2022-03-11",
+      "lt": 21,
+      "in_window_rule": true
+    },
+    {
+      "event": "E5_redsea_2024",
+      "tau": 99.0,
+      "port": "shanghai",
+      "t_satellite": "2023-06-09",
+      "lt": 220,
+      "in_window_rule": false
+    },
+    {
+      "event": "E3_uswc_crisis_2021",
+      "tau": 95.0,
+      "port": "los_angeles",
+      "t_satellite": "2021-09-20",
+      "lt": 25,
+      "in_window_rule": true
+    },
+    {
+      "event": "E3_uswc_crisis_2021",
+      "tau": 97.5,
+      "port": "los_angeles",
+      "t_satellite": "2021-09-20",
+      "lt": 25,
+      "in_window_rule": true
+    },
+    {
+      "event": "E3_uswc_crisis_2021",
+      "tau": 99.0,
+      "port": "los_angeles",
+      "t_satellite": "2021-09-20",
+      "lt": 25,
+      "in_window_rule": true
+    },
+    {
+      "event": "E1_suez_2021",
+      "tau": 95.0,
+      "port": "rotterdam",
+      "t_satellite": "2021-02-12",
+      "lt": 40,
+      "in_window_rule": true
+    },
+    {
+      "event": "E4_ukraine_energy_2022",
+      "tau": 95.0,
+      "port": "rotterdam",
+      "t_satellite": "2022-02-14",
+      "lt": 24,
+      "in_window_rule": true
+    },
+    {
+      "event": "E6_rhine_lowwater_2023",
+      "tau": 95.0,
+      "port": "rotterdam",
+      "t_satellite": "2023-08-10",
+      "lt": 10,
+      "in_window_rule": true
+    },
+    {
+      "event": "E1_suez_2021",
+      "tau": 97.5,
+      "port": "rotterdam",
+      "t_satellite": "2021-02-12",
+      "lt": 40,
+      "in_window_rule": true
+    },
+    {
+      "event": "E4_ukraine_energy_2022",
+      "tau": 97.5,
+      "port": "rotterdam",
+      "t_satellite": "2022-02-14",
+      "lt": 24,
+      "in_window_rule": true
+    },
+    {
+      "event": "E6_rhine_lowwater_2023",
+      "tau": 97.5,
+      "port": "rotterdam",
+      "t_satellite": "2023-07-05",
+      "lt": 46,
+      "in_window_rule": true
+    },
+    {
+      "event": "E1_suez_2021",
+      "tau": 99.0,
+      "port": "rotterdam",
+      "t_satellite": "2021-01-25",
+      "lt": 58,
+      "in_window_rule": true
+    },
+    {
+      "event": "E4_ukraine_energy_2022",
+      "tau": 99.0,
+      "port": "rotterdam",
+      "t_satellite": "2022-02-14",
+      "lt": 24,
+      "in_window_rule": true
+    },
+    {
+      "event": "E6_rhine_lowwater_2023",
+      "tau": 99.0,
+      "port": "rotterdam",
+      "t_satellite": "2023-07-05",
+      "lt": 46,
+      "in_window_rule": true
+    }
+  ]
+}
