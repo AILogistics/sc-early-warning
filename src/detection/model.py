@@ -1,41 +1,37 @@
-"""加载 AMFDet-Lite(YOLOv8n + LAE + SPPFSENetV2 + EUCB)。
-复用主项目 ultralytics/ 框架(含 Addmodules 自定义模块注册)。
+"""Load AMFDet-Lite (YOLOv8n + LAE + SPPFSENetV2 + EUCB).
 
-关键:必须在 `from ultralytics import YOLO` 之前把父项目根插入 sys.path[0],
-否则 pip 安装的 ultralytics 会被优先加载,缺少 Addmodules 模块导致权重加载失败。
-
-注意:parents[3] 指向父项目根 D:/Article/YOLOv8-SAR-Information/
-(parents[2] 是 sc_early_warning/ 本身,不可用)
+Requires an Ultralytics YOLOv8 installation patched with the custom modules in
+third_party/ultralytics_modules/ (registered in ultralytics/nn). Resolution order:
+  1. $SC_ULTRALYTICS_ROOT environment variable
+  2. an `ultralytics/` directory next to this repository (original project layout)
+  3. the pip-installed ultralytics (if you patched it in place)
+Weights resolution: model/best.pt inside this repository takes precedence.
 """
 from __future__ import annotations
+import os
 import sys
 from pathlib import Path
 
-# 复用主项目的 ultralytics(含 Addmodules 自定义模块)
-# model.py 路径: sc_early_warning/src/detection/model.py
-#   parents[0]=src/detection/, [1]=src/, [2]=sc_early_warning/, [3]=父项目根
-MAIN_PROJ = Path(__file__).resolve().parents[3]
-MAIN_PROJ_STR = str(MAIN_PROJ)
+REPO_ROOT = Path(__file__).resolve().parents[2]
 
-# 必须在 import ultralytics 之前修改 sys.path
-if MAIN_PROJ_STR not in sys.path:
+_cand = []
+if os.environ.get("SC_ULTRALYTICS_ROOT"):
+    _cand.append(Path(os.environ["SC_ULTRALYTICS_ROOT"]))
+_cand.append(REPO_ROOT.parent / "ultralytics")   # original project layout
+MAIN_PROJ = next((c for c in _cand if (c / "ultralytics" / "nn").exists() or c.name == "ultralytics"), None)
+MAIN_PROJ_STR = str(MAIN_PROJ) if MAIN_PROJ else ""
+
+if MAIN_PROJ and MAIN_PROJ_STR not in sys.path:
     sys.path.insert(0, MAIN_PROJ_STR)
-# 防御:若 pip 版 ultralytics 已被加载(例如父模块 import),强制清理
 for _mod_name in list(sys.modules):
     if _mod_name == "ultralytics" or _mod_name.startswith("ultralytics."):
         del sys.modules[_mod_name]
 
-from ultralytics import YOLO  # noqa: E402  (必须在 sys.path 修改后)
+from ultralytics import YOLO  # noqa: E402
 
 
-# AMFDet 权重候选路径(按训练完整性排序)
-# 重要:improved_model_LAE_SPPFSENetV2_EUCB_full 只训练了 7 epoch(mAP50=0.69),
-# 不是完整模型!正确选择是 ablation_Exp7_LAE_SPPF_EUCB_Full(357 epoch, mAP50=0.911)
 AMFDET_WEIGHTS_CANDIDATES = [
-    MAIN_PROJ / "runs" / "detect" / "ablation_Exp7_LAE_SPPF_EUCB_Full" / "weights" / "best.pt",
-    MAIN_PROJ / "runs" / "ablation_final" / "baseline" / "weights" / "best.pt",
-    # 备选(已确认未充分训练,仅作兜底):
-    MAIN_PROJ / "runs" / "detect" / "improved_model_LAE_SPPFSENetV2_EUCB_full" / "weights" / "best.pt",
+    REPO_ROOT / "model" / "best.pt",
 ]
 
 

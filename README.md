@@ -29,7 +29,7 @@ experiments/
   exp5_lead_time/             lead-time results, measured quiet-FPR (static & adaptive),
                               baselines comparison, adaptive scorer results
   exp8_granger/               cross-port Granger overlap statistics (negative result)
-model/                   trained AMFDet-Lite weights (state_dict.pt, 2.36 M params)
+model/                   trained AMFDet-Lite weights (best.pt loads via patched Ultralytics; state_dict.pt for inspection)
 third_party/ultralytics_modules/  LAE / SPPF-SENetV2 / EUCB custom modules needed to load
                                   the weights inside the Ultralytics YOLOv8 framework
 results/                 acquisition statistics (event-phase and quiet-phase downloads)
@@ -66,7 +66,7 @@ python persistence_analysis.py      # k=1 -> 7.3% FPR / 5 events; k>=2 -> 0% FPR
 Detection re-runs require the custom YOLOv8 modules: copy the three files from
 `third_party/ultralytics_modules/` into `ultralytics/nn/Addmodules/` of an Ultralytics
 YOLOv8 installation and register them in its `nn/tasks.py` (module names: `LAE`,
-`SPPFSENetV2`, `EUCB`), then load `model/state_dict.pt`.
+`SPPFSENetV2`, `EUCB`), then load `model/best.pt`.
 
 ## Scope notes (honesty statements from the paper)
 
